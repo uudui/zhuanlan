@@ -1191,6 +1191,7 @@ html.lightbox-zoomin body {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     -webkit-transform: translateY(-59px);
     -ms-transform: translateY(-59px);
     transform: translateY(-59px);

@@ -444,7 +444,7 @@ img {
 
 a {
     text-decoration: none;
-    color:#50C87E;
+    color: #50C87E;
 }
 
 a:hover {
@@ -457,4 +457,164 @@ a:hover {
 
 ::-webkit-input-placeholder {
     color: gray
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: 700
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td, th {
+    padding: 0
+}
+
+.pull-left {
+    float: left
+}
+
+.pull-right {
+    float: right
+}
+
+.hide-text {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0
+}
+
+.main {
+    margin: 100px auto;
+    max-width: 660px;
+}
+
+.main-container {
+    min-height: 660px;
+    position: relative;
+}
+
+
+@media screen and (max-width: 660px) {
+    .main {
+
+    }
+}
+
+ul, menu {
+    margin: 0;
+    padding: 0
+}
+
+/*=============================Start block title style===============================*/
+.block-title {
+    line-height: 22px;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 32px;
+    font-size: 16px
+}
+
+.block-title > span {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    padding-right: 16px
+}
+
+.block-title:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 11px;
+    background: #f0f0f0
+}
+
+.block-title .help {
+    display: inline-block;
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    line-height: 18px;
+    color: gray
+}
+
+.block-title .help .menu-button {
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    margin-left: -24px
+}
+
+.block-title .help .menu-button i {
+    top: 0;
+    vertical-align: -4px
+}
+
+.block-title .help .menu {
+    width: 220px;
+    min-height: auto !important;
+    padding: 16px;
+    right: auto;
+    left: 50%;
+    margin-left: -123px;
+    margin-top: 14px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+    cursor: default
+}
+
+@media screen and (max-width: 660px) {
+    .block-title {
+        padding-left: 16px
+    }
+
+    .block-title:after {
+        left: 96px
+    }
+
+    .block-title .help .menu {
+        left: 0;
+        margin-left: -30px
+    }
+
+    .block-title .help .menu:before, .block-title .help .menu:after {
+        left: 0;
+        margin-left: 17px
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .block-title .help .pop-panel {
+        margin-left: -60px
+    }
+
+    .block-title .help .pop-panel:before, .block-title .help .pop-panel:after {
+        margin-left: -50px !important
+    }
 }
