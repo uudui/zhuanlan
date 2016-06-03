@@ -1,0 +1,593 @@
+/*===================================Start home style ====================================*/
+.home {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #fbfcfc
+}
+
+.home .navbar {
+    background: rgba(255, 255, 255, .96)
+}
+
+.home .main-container {
+    width: 100%;
+    height: 100%;
+    margin-top: -59px
+}
+
+.home .top {
+    position: relative;
+    height: 450px;
+    text-align: center;
+    z-index: 0;
+    /*background: url(https://z1.zhimg.com/images/287d0dbb.patterns.svg) center no-repeat*/
+}
+
+.home .top:before {
+    content: '';
+    /*background: url(https://z1.zhimg.com/images/10223065.bg@2x.png) repeat-x;*/
+    background-size: 20px 450px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0
+}
+
+.home .top h1 {
+    width: 129px;
+    height: 0;
+    padding-top: 179px;
+    overflow: hidden;
+    margin: 0;
+    /*  background: url(https://z1.zhimg.com/images/74c69e7e.logo.svg) center no-repeat;*/
+    background-size: 129px 179px;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    top: 152px
+}
+
+.home .top h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0;
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    color: #2a2a2a;
+    letter-spacing: .5em
+}
+
+.home .top .write-btn {
+    position: absolute;
+    top: 413px;
+    left: 50%;
+    width: 102px;
+    height: 38px;
+    margin-left: -51px;
+    line-height: 36px;
+    padding: 0;
+    min-height: 0;
+    min-width: 0;
+    box-sizing: border-box
+}
+
+@media screen and (max-width: 660px) {
+    .home .top .write-btn {
+        visibility: hidden
+    }
+}
+
+.home section {
+    padding-top: 48px
+}
+
+.home section h3 {
+    width: 500px;
+    margin: 0 auto 30px;
+    font-size: 14px;
+    text-align: center;
+    position: relative
+}
+
+.home section h3 span {
+    padding: 0 16px;
+    background: #fbfbfb;
+    position: relative;
+    z-index: 1
+}
+
+.home section h3:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    background: #d9d9d9
+}
+
+@media screen and (max-width: 660px) {
+    .home section h3 {
+        text-align: left;
+        width: auto
+    }
+}
+
+.home .column-card-list {
+    min-height: 536px
+}
+
+@media screen and (max-width: 1020px) {
+    .home .column-card-list {
+        min-height: 546px
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .home .column-card-list {
+        min-height: 352px
+    }
+}
+
+.home .card-item,
+.home .column-card-item,
+.home .post-card-item {
+    float: left;
+    list-style: none;
+    margin: 20px 0 0 16px;
+    width: 206px;
+    height: 258px;
+    text-align: center;
+    color: gray;
+    box-sizing: border-box;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .06);
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    position: relative
+}
+
+.home .card-item > p,
+.home .column-card-item > p,
+.home .post-card-item > p {
+    margin: 0
+}
+
+.home .card-item a,
+.home .column-card-item a,
+.home .post-card-item a {
+    text-decoration: none
+}
+
+.home .card-item .title,
+.home .column-card-item .title,
+.home .post-card-item .title {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.home .card-item .title a,
+.home .column-card-item .title a,
+.home .post-card-item .title a {
+    color: #333
+}
+
+.home .card-item .description,
+.home .column-card-item .description,
+.home .post-card-item .description,
+.home .card-item .content,
+.home .column-card-item .content,
+.home .post-card-item .content {
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.home .card-item .description a,
+.home .column-card-item .description a,
+.home .post-card-item .description a,
+.home .card-item .content a,
+.home .column-card-item .content a,
+.home .post-card-item .content a {
+    color: gray
+}
+
+.home .card-item .meta a, .home .column-card-item .meta a, .home .post-card-item .meta a {
+    color: gray
+}
+
+@media screen and (max-width: 660px) {
+    .home .card-item, .home .column-card-item, .home .post-card-item {
+        float: none;
+        margin: 0 !important;
+        width: 100%;
+        height: 88px;
+        border: 0;
+        box-shadow: none;
+        background: transparent;
+        padding: 20px 0 20px 16px;
+        text-align: left
+    }
+}
+
+.home .column-card-item:nth-child(4n-3) {
+    margin-left: 0
+}
+
+.home .column-card-item:nth-child(-n+4) {
+    margin-top: 0
+}
+
+@media screen and (min-width: 1020px) {
+    .home .column-card-item:nth-child(4n-3) {
+        margin-left: 74px
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .home .column-card-item:nth-child(4n-3) {
+        margin-left: 16px
+    }
+
+    .home .column-card-item:nth-child(3n-2) {
+        margin-left: 5px
+    }
+
+    .home .column-card-item:nth-child(-n+4) {
+        margin-top: 20px
+    }
+
+    .home .column-card-item:nth-child(-n+3) {
+        margin-top: 0
+    }
+}
+
+.home .column-card-item .avatar {
+    margin: 26px auto 8px;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+.home .column-card-item .avatar img {
+    width: 48px;
+    height: 48px
+}
+
+@media screen and (max-width: 660px) {
+    .home .column-card-item .avatar {
+        margin: 0;
+        float: left
+    }
+}
+
+.home .column-card-item .title {
+    margin: 16px 16px 7px
+}
+
+@media screen and (max-width: 660px) {
+    .home .column-card-item .title {
+        margin: 4px 106px 6px 60px
+    }
+}
+
+.home .column-card-item .description {
+    line-height: 21px;
+    height: 42px;
+    margin-bottom: 14px;
+    word-break: break-all
+}
+
+@media screen and (max-width: 660px) {
+    .home .column-card-item .description {
+        margin: 0 90px 0 60px;
+        padding-left: 0
+    }
+}
+
+.home .column-card-item .meta {
+    margin-bottom: 15px
+}
+
+@media screen and (max-width: 660px) {
+    .home .column-card-item .meta {
+        display: none
+    }
+}
+
+.home .column-card-item .btn, .home .column-card-item .zm-img-uploader .zm-command a, .zm-img-uploader .zm-command .home .column-card-item a, .home .column-card-item .zg-btn-blue, .home .column-card-item .modal-dialog-buttons > button[name=cancel], .home .column-card-item .modal-dialog-buttons > button[name=ok], .home .column-card-item .modal-dialog-buttons > button[name=yes], .home .column-card-item .modal-dialog-buttons > button[name=danger], .home .column-card-item .navbar-publish-container .pop-button, .navbar-publish-container .home .column-card-item .pop-button, .home .column-card-item .review-comment-panel .load-more a, .review-comment-panel .load-more .home .column-card-item a {
+    margin-bottom: 23px
+}
+
+@media screen and (max-width: 660px) {
+    .home .column-card-item .btn, .home .column-card-item .zm-img-uploader .zm-command a, .zm-img-uploader .zm-command .home .column-card-item a, .home .column-card-item .zg-btn-blue, .home .column-card-item .modal-dialog-buttons > button[name=cancel], .home .column-card-item .modal-dialog-buttons > button[name=ok], .home .column-card-item .modal-dialog-buttons > button[name=yes], .home .column-card-item .modal-dialog-buttons > button[name=danger], .home .column-card-item .navbar-publish-container .pop-button, .navbar-publish-container .home .column-card-item .pop-button, .home .column-card-item .review-comment-panel .load-more a, .review-comment-panel .load-more .home .column-card-item a {
+        position: absolute;
+        right: 16px;
+        top: 34px;
+        background: transparent;
+        border-color: transparent
+    }
+
+    html.no-touch .home .column-card-item .btn:hover, html.no-touch .home .column-card-item .zm-img-uploader .zm-command a:hover, .zm-img-uploader .zm-command html.no-touch .home .column-card-item a:hover, html.no-touch .home .column-card-item .zg-btn-blue:hover, html.no-touch .home .column-card-item .modal-dialog-buttons > button[name=cancel]:hover, html.no-touch .home .column-card-item .modal-dialog-buttons > button[name=ok]:hover, html.no-touch .home .column-card-item .modal-dialog-buttons > button[name=yes]:hover, html.no-touch .home .column-card-item .modal-dialog-buttons > button[name=danger]:hover, html.no-touch .home .column-card-item .navbar-publish-container .pop-button:hover, .navbar-publish-container html.no-touch .home .column-card-item .pop-button:hover, html.no-touch .home .column-card-item .review-comment-panel .load-more a:hover, .review-comment-panel .load-more html.no-touch .home .column-card-item a:hover {
+        color: #0CA547
+    }
+
+    .home .column-card-item .btn:active, .home .column-card-item .zm-img-uploader .zm-command a:active, .zm-img-uploader .zm-command .home .column-card-item a:active, .home .column-card-item .zg-btn-blue:active, .home .column-card-item .modal-dialog-buttons > button[name=cancel]:active, .home .column-card-item .modal-dialog-buttons > button[name=ok]:active, .home .column-card-item .modal-dialog-buttons > button[name=yes]:active, .home .column-card-item .modal-dialog-buttons > button[name=danger]:active, .home .column-card-item .navbar-publish-container .pop-button:active, .navbar-publish-container .home .column-card-item .pop-button:active, .home .column-card-item .review-comment-panel .load-more a:active, .review-comment-panel .load-more .home .column-card-item a:active {
+        background: rgba(77, 190, 46, .14);
+        color: #fff !important
+    }
+}
+
+.home .post-card-list {
+    width: 940px;
+    margin: 0 auto;
+    min-height: 526px
+}
+
+@media screen and (max-width: 1020px) {
+    .home .post-card-list {
+        width: auto;
+        min-height: 540px
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .home .post-card-list {
+        min-height: 444px
+    }
+}
+
+.home .post-card-item {
+    width: 300px;
+    height: 248px
+}
+
+.home .post-card-item .post-no-img {
+    display: none
+}
+
+.home .post-card-item:nth-child(3n-2) {
+    margin-left: 0
+}
+
+.home .post-card-item:nth-child(-n+3) {
+    margin-top: 0
+}
+
+@media screen and (max-width: 1020px) {
+    .home .post-card-item {
+        width: 300px;
+        height: 248px
+    }
+
+    .home .post-card-item:nth-child(3n-2) {
+        margin-left: 20px
+    }
+
+    .home .post-card-item:nth-child(-n+3) {
+        margin-top: 20px
+    }
+
+    .home .post-card-item:nth-child(-n+2) {
+        margin-top: 0
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .home .post-card-item {
+        width: auto;
+        height: 88px;
+        margin: 0 0 23px !important;
+        padding: 0 16px
+    }
+
+    .home .post-card-item .post-no-img {
+        display: block;
+        left: 16px
+    }
+}
+
+.home .post-card-item a {
+    text-decoration: none
+}
+
+.home .post-card-item > a > p {
+    margin: 0
+}
+
+.home .post-card-item .post-img {
+    width: 100%;
+    height: 130px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 4px 4px 0 0
+}
+
+@media screen and (max-width: 660px) {
+    .home .post-card-item .post-img {
+        width: 88px;
+        height: 88px;
+        border-radius: 4px;
+        float: left
+    }
+}
+
+.home .post-card-item .title {
+    padding: 20px 16px 16px;
+    line-height: 25px;
+    text-align: left
+}
+
+.home .post-card-item.item-with-img .title {
+    padding: 6px 16px
+}
+
+.home .post-card-item .content {
+    line-height: 1.7;
+    text-align: left;
+    color: #333
+}
+
+.home .post-card-item .content .read-all {
+    padding-right: 24px;
+    position: relative
+}
+
+.home .post-card-item .content .read-all i {
+    position: absolute;
+    left: 52px;
+    top: -3px;
+    width: 25px
+}
+
+.home .post-card-item .meta {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    text-align: left;
+    line-height: 16px
+}
+
+.home .post-card-item .meta .author {
+    float: left;
+    width: 28%
+}
+
+.home .post-card-item .meta .source {
+    float: right;
+    text-align: right;
+    width: 58%
+}
+
+@media screen and (max-width: 1020px) {
+    .home .post-card-item .meta .author {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .home .post-card-item .title {
+        margin-left: 100px;
+        padding: 0 !important
+    }
+
+    .home .post-card-item .content {
+        display: none
+    }
+
+    .home .post-card-item .meta {
+        position: static;
+        margin: 10px 0 0 100px;
+        width: auto
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .home .post-card-item .title {
+        max-height: 50px;
+        overflow: hidden
+    }
+}
+
+.home .random {
+    text-align: center;
+    margin: 36px 0 0
+}
+
+.home .random a {
+    font-size: 13px
+}
+
+.home .random a i {
+    position: relative;
+    font-size: 24px;
+    margin-right: 4px;
+    display: inline-block;
+    top: -3px
+}
+
+.home .random a i:before {
+    vertical-align: middle
+}
+
+.home .random a * {
+    vertical-align: middle
+}
+
+.home .random a.loading i:before {
+    font-size: 24px;
+    margin-left: 0;
+    vertical-align: middle
+}
+
+.home .bottom {
+    margin-top: 48px;
+    background-size: 20px 450px;
+    text-align: center;
+    color: #2a2a2a;
+    padding-top: 134px;
+    height: 286px
+}
+
+.home .bottom h3 {
+    padding: 26px 0;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 auto 40px;
+    border: solid #97FFD8;
+    border-width: 1px 0;
+    width: 345px;
+    letter-spacing: 14px;
+    white-space: nowrap
+}
+
+@media screen and (max-width: 660px) {
+    .home .bottom h3 {
+        width: 60%
+    }
+}
+
+.home .bottom .btn, .home .bottom .zm-img-uploader .zm-command a, .zm-img-uploader .zm-command .home .bottom a, .home .bottom .zg-btn-blue, .home .bottom .modal-dialog-buttons > button[name=cancel], .home .bottom .modal-dialog-buttons > button[name=ok], .home .bottom .modal-dialog-buttons > button[name=yes], .home .bottom .modal-dialog-buttons > button[name=danger], .home .bottom .navbar-publish-container .pop-button, .navbar-publish-container .home .bottom .pop-button, .home .bottom .review-comment-panel .load-more a, .review-comment-panel .load-more .home .bottom a {
+    font-size: 14px;
+    padding: 0;
+    min-height: 0;
+    min-width: 0;
+    box-sizing: border-box;
+    width: 120px;
+    height: 38px;
+    line-height: 36px
+}
+
+.home .bottom .copyright {
+    position: absolute;
+    width: 100%;
+    bottom: 14px;
+    font-size: 14px;
+    color: gray;
+    text-align: center
+}
+
+.home .bottom .copyright .about {
+    margin-right: 20px;
+    color: gray
+}
+
+@media screen and (max-width: 660px) {
+    .home .bottom {
+        height: 160px;
+        padding-top: 68px
+    }
+
+    .home .bottom .btn, .home .bottom .zm-img-uploader .zm-command a, .zm-img-uploader .zm-command .home .bottom a, .home .bottom .zg-btn-blue, .home .bottom .modal-dialog-buttons > button[name=cancel], .home .bottom .modal-dialog-buttons > button[name=ok], .home .bottom .modal-dialog-buttons > button[name=yes], .home .bottom .modal-dialog-buttons > button[name=danger], .home .bottom .navbar-publish-container .pop-button, .navbar-publish-container .home .bottom .pop-button, .home .bottom .review-comment-panel .load-more a, .review-comment-panel .load-more .home .bottom a {
+        display: none
+    }
+}
