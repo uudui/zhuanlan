@@ -505,14 +505,13 @@ td, th {
 
 .main {
     margin: 100px auto;
-    max-width: 660px;
+    max-width: 960px;
 }
 
 .main-container {
     min-height: 660px;
     position: relative;
 }
-
 
 @media screen and (max-width: 660px) {
     .main {
@@ -618,3 +617,45 @@ ul, menu {
         margin-left: -50px !important
     }
 }
+
+.block-title {
+    font-size: 16px;
+    color: #b3b3b1;
+}
+
+/*============================Start Nav title style ============================*/
+.main .nav-title {
+    color: #b3b3b1;
+    line-height: 40px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.nav-title a {
+    margin-bottom: -1px;
+    padding: 8px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #B3B3B1;
+}
+
+.nav-title a.active {
+    margin-bottom: 0;
+    color: #50C87E;
+    border-bottom: 5px solid#50C87E;
+}
+
+
+
+/*@media (max-width: 767px) {*/
+    /*.nav-title span {*/
+        /*margin-bottom: -1px;*/
+        /*font-size: 16px*/
+    /*}*/
+
+    /*.nav-title a {*/
+        /*margin-bottom: -1px;*/
+        /*font-size: 16px;*/
+        /*color: #555;*/
+    /*}*/
+/*}*/
