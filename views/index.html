@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="no-touch">
-<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,6 +7,9 @@
     <link rel="stylesheet" href="../assets/css/normalize.css"/>
     <link rel="stylesheet" href="../assets/css/scaffold.css"/>
     <link rel="stylesheet" href="../assets/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../assets/css/modal.css"/>
+    <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../assets/js/modal.js"></script>
 </head>
 <body>
 
@@ -25,20 +27,19 @@
     <!-- start title -->
     <div class="navbar-title-container clearfix">
         <div class="titles">
-            <div class="subtitle">科普时间</div>
-            <div class="main-title">—— 科普常识天天学，衣食住行更科学。</div>
+            <div class="main-title">科普时间</div>
+            <div class="subtitle">科普常识天天学，衣食住行更科学。</div>
         </div>
     </div>
 
     <!-- 右侧部分菜单 -->
-    <div class="navbar-right-container">
+    <div>
         <ul class="navbar-right-container">
             <!--<li>
-                <a class="btn btn-green" href="#">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                    写科普
+                <a href="#">
+                    <img class="avatar" src="../assets/images/avatar_m.jpeg"/>
                 </a>
-            </li>-->
+            </li>
 
             <li>
                 <a href="#" class="bell">
@@ -47,8 +48,15 @@
             </li>
 
             <li>
-                <a href="#">
-                    <img class="avatar" src="../assets/images/avatar_m.jpeg"/>
+                <a class="btn btn-green" href="#">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    写科普
+                </a>
+            </li>-->
+
+            <li>
+                <a class="btn btn-grey" href="#" data-toggle="modal" data-target="#login-modal">
+                    登录/注册
                 </a>
             </li>
 
@@ -69,10 +77,39 @@
         </div>-->
 
         <nav class="nav-title">
-            <a href="#">今日科普</a>
-            <a class="active" href="#">一周精选</a>
+            <a class="active" href="#">今日科普</a>
+            <a href="#">一周精选</a>
         </nav>
+
+        <!-- 页面底部 -->
+        <footer class="footer">
+            <hr/>
+            <p class="copyright">
+                <span>©2016 科普时间</span>
+            </p>
+        </footer>
+
     </div>
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">登录/注册</h4>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-grey" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-green">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </div>
 

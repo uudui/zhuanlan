@@ -443,7 +443,7 @@
     position: absolute;
     left: 52px;
     top: -3px;
-    width: 25px
+    width: 25px;
 }
 
 .home .post-card-item .meta {
@@ -452,59 +452,59 @@
     right: 16px;
     bottom: 16px;
     text-align: left;
-    line-height: 16px
+    line-height: 16px;
 }
 
 .home .post-card-item .meta .author {
     float: left;
-    width: 28%
+    width: 28%;
 }
 
 .home .post-card-item .meta .source {
     float: right;
     text-align: right;
-    width: 58%
+    width: 58%;
 }
 
 @media screen and (max-width: 1020px) {
     .home .post-card-item .meta .author {
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap
+        white-space: nowrap;
     }
 }
 
 @media screen and (max-width: 660px) {
     .home .post-card-item .title {
         margin-left: 100px;
-        padding: 0 !important
+        padding: 0 !important;
     }
 
     .home .post-card-item .content {
-        display: none
+        display: none;
     }
 
     .home .post-card-item .meta {
         position: static;
         margin: 10px 0 0 100px;
-        width: auto
+        width: auto;
     }
 }
 
 @media screen and (max-width: 420px) {
     .home .post-card-item .title {
         max-height: 50px;
-        overflow: hidden
+        overflow: hidden;
     }
 }
 
 .home .random {
     text-align: center;
-    margin: 36px 0 0
+    margin: 36px 0 0;
 }
 
 .home .random a {
-    font-size: 13px
+    font-size: 13px;
 }
 
 .home .random a i {
@@ -512,82 +512,20 @@
     font-size: 24px;
     margin-right: 4px;
     display: inline-block;
-    top: -3px
+    top: -3px;
 }
 
 .home .random a i:before {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .home .random a * {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .home .random a.loading i:before {
     font-size: 24px;
     margin-left: 0;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
-.home .bottom {
-    margin-top: 48px;
-    background-size: 20px 450px;
-    text-align: center;
-    color: #2a2a2a;
-    padding-top: 134px;
-    height: 286px
-}
-
-.home .bottom h3 {
-    padding: 26px 0;
-    font-size: 18px;
-    font-weight: 300;
-    margin: 0 auto 40px;
-    border: solid #97FFD8;
-    border-width: 1px 0;
-    width: 345px;
-    letter-spacing: 14px;
-    white-space: nowrap
-}
-
-@media screen and (max-width: 660px) {
-    .home .bottom h3 {
-        width: 60%
-    }
-}
-
-.home .bottom .btn, .home .bottom .zm-img-uploader .zm-command a, .zm-img-uploader .zm-command .home .bottom a, .home .bottom .zg-btn-blue, .home .bottom .modal-dialog-buttons > button[name=cancel], .home .bottom .modal-dialog-buttons > button[name=ok], .home .bottom .modal-dialog-buttons > button[name=yes], .home .bottom .modal-dialog-buttons > button[name=danger], .home .bottom .navbar-publish-container .pop-button, .navbar-publish-container .home .bottom .pop-button, .home .bottom .review-comment-panel .load-more a, .review-comment-panel .load-more .home .bottom a {
-    font-size: 14px;
-    padding: 0;
-    min-height: 0;
-    min-width: 0;
-    box-sizing: border-box;
-    width: 120px;
-    height: 38px;
-    line-height: 36px
-}
-
-.home .bottom .copyright {
-    position: absolute;
-    width: 100%;
-    bottom: 14px;
-    font-size: 14px;
-    color: gray;
-    text-align: center
-}
-
-.home .bottom .copyright .about {
-    margin-right: 20px;
-    color: gray
-}
-
-@media screen and (max-width: 660px) {
-    .home .bottom {
-        height: 160px;
-        padding-top: 68px
-    }
-
-    .home .bottom .btn, .home .bottom .zm-img-uploader .zm-command a, .zm-img-uploader .zm-command .home .bottom a, .home .bottom .zg-btn-blue, .home .bottom .modal-dialog-buttons > button[name=cancel], .home .bottom .modal-dialog-buttons > button[name=ok], .home .bottom .modal-dialog-buttons > button[name=yes], .home .bottom .modal-dialog-buttons > button[name=danger], .home .bottom .navbar-publish-container .pop-button, .navbar-publish-container .home .bottom .pop-button, .home .bottom .review-comment-panel .load-more a, .review-comment-panel .load-more .home .bottom a {
-        display: none
-    }
-}
