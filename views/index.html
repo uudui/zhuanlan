@@ -4,7 +4,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>爱代驾</title>
-    <link rel="stylesheet" href="../assets/css/normalize.css"/>
     <link rel="stylesheet" href="../assets/css/scaffold.css"/>
     <link rel="stylesheet" href="../assets/css/font-awesome.css"/>
     <link rel="stylesheet" href="../assets/css/modal.css"/>
@@ -76,10 +75,15 @@
             <span>今日科普</span>
         </div>-->
 
-        <nav class="nav-title">
+        <div class="tabs">
+            <a class="tab active" href="#">今日科普</a>
+            <a class="tab" href="#">一周精选</a>
+        </div>
+
+        <!--<nav class="nav-title">
             <a class="active" href="#">今日科普</a>
             <a href="#">一周精选</a>
-        </nav>
+        </nav>-->
 
         <!-- 页面底部 -->
         <footer class="footer">
@@ -92,20 +96,37 @@
     </div>
 
     <!-- Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">登录/注册</h4>
+                    <!--<h4 class="modal-title" id="login-modal-label">科普时间</h4>-->
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="tabs login-tabs">
+                        <a class="tab active" href="#">登录/LOGIN</a>
+                        <a class="tab" href="#">注册/SIGNUP</a>
+                    </div>
+
+
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="邮箱"/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="密码"/>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="button" class="btn btn-green btn-lg btn-block" value="登 录"/>
+                        </div>
+                    </form>
+
+
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-grey" data-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-green">保存</button>
-                </div>
+
             </div>
         </div>
     </div>

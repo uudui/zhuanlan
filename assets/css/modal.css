@@ -68,7 +68,7 @@
 }
 .modal-header {
     padding: 15px;
-    border-bottom: 1px solid #e5e5e5;
+    /*border-bottom: 1px solid #e5e5e5;*/
 }
 .modal-header .close {
     margin-top: -2px;
@@ -105,7 +105,7 @@
 }
 @media (min-width: 768px) {
     .modal-dialog {
-        width: 600px;
+        width: 500px;
         margin: 30px auto;
     }
     .modal-content {

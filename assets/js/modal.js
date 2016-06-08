@@ -184,10 +184,10 @@
 
     Modal.prototype.backdrop = function (callback) {
         var that = this
-        var animate = this.$element.hasClass('fade') ? 'fade' : ''
+        var animate = this.$element.hasClass('fade') ? 'fade' : '';
 
         if (this.isShown && this.options.backdrop) {
-            var doAnimate = $.support.transition && animate
+            var doAnimate = $.support.transition && animate;
 
             this.$backdrop = $(document.createElement('div'))
                 .addClass('modal-backdrop ' + animate)
@@ -195,13 +195,13 @@
 
             this.$element.on('click.dismiss.bs.modal', $.proxy(function (e) {
                 if (this.ignoreBackdropClick) {
-                    this.ignoreBackdropClick = false
+                    this.ignoreBackdropClick = false;
                     return
                 }
                 if (e.target !== e.currentTarget) return
                 this.options.backdrop == 'static'
                     ? this.$element[0].focus()
-                    : this.hide()
+                    : this.hide();
             }, this))
 
             if (doAnimate) this.$backdrop[0].offsetWidth // force reflow

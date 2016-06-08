@@ -650,24 +650,124 @@ ul, menu {
 .nav-title a.active {
     margin-bottom: 0;
     color: #50C87E;
-    border-bottom: 3px solid#50C87E;
+    border-bottom: 3px solid #50C87E;
+}
+
+/*@media (max-width: 767px) {*/
+/*.nav-title span {*/
+/*margin-bottom: -1px;*/
+/*font-size: 16px*/
+/*}*/
+
+/*.nav-title a {*/
+/*margin-bottom: -1px;*/
+/*font-size: 16px;*/
+/*color: #555;*/
+/*}*/
+/*}*/
+
+.tabs {
+    height: 31px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 40px;
+}
+
+.tabs .tab {
+    display: inline-block;
+    padding: 0 20px;
+    margin-right: 10px;
+    color: #B3B3B1;
+    opacity: .6;
+    line-height: 1;
+    font-size: 15px;
+    height: 30px;
+    border-bottom: 3px solid transparent;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.tabs .tab.active,
+.tabs .tab:hover {
+    opacity: 1;
+    color: #41464B;
+    border-bottom: 3px solid #50C87E;
+}
+
+.tabs .tab.active {
+    font-weight: 600;
+}
+
+.tabs.login-tabs {
+    text-align: center;
 }
 
 
+/*===========================Start form group style==============================*/
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    vertical-align: baseline;
+}
 
-/*@media (max-width: 767px) {*/
-    /*.nav-title span {*/
-        /*margin-bottom: -1px;*/
-        /*font-size: 16px*/
-    /*}*/
+button, input[type="button"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
 
-    /*.nav-title a {*/
-        /*margin-bottom: -1px;*/
-        /*font-size: 16px;*/
-        /*color: #555;*/
-    /*}*/
-/*}*/
+button[disabled], input[disabled] {
+    cursor: default;
+}
 
+.form-group {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.modal .form-group {
+    width: 80%;
+    text-align: center;
+}
+
+.form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-group .form-control {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid rgba(115, 126, 140, 0.2);
+    border-radius: 3px;
+    -webkit-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #50C87E;
+    box-shadow: none;
+}
 
 /*=====================Start footer style=====================================*/
 .footer {

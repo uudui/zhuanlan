@@ -370,6 +370,7 @@ time.hover-title.short:after {
     margin: 0;
     cursor: pointer;
     font-size: 14px;
+    outline: none;
     background-color: transparent;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -380,7 +381,12 @@ time.hover-title.short:after {
     text-align: center;
     text-decoration: none;
     -webkit-transition: background ease-out .1s;
-    transition: background ease-out .1s
+    transition: background ease-out .1s;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
 }
 
 .btn:visited .btn:active {
@@ -1222,16 +1228,10 @@ textarea.mui-input, .review-comment-panel .comment-form > textarea.editable {
     margin-bottom: 2px
 }
 
-/*
-.navbar-title-container .titles .subtitle a {
-    color: gray
-}
-*/
-
 .navbar-title-container .titles .subtitle {
     font-size: 14px;
     font-weight: 600;
-    color: #333;
+    color: gray;
 }
 
 
