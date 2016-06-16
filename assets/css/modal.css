@@ -105,8 +105,8 @@
 }
 @media (min-width: 768px) {
     .modal-dialog {
-        width: 500px;
-        margin: 30px auto;
+        width: 400px;
+        margin: 50px auto;
     }
     .modal-content {
         -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
@@ -116,8 +116,4 @@
         width: 300px;
     }
 }
-@media (min-width: 992px) {
-    .modal-lg {
-        width: 900px;
-    }
-}
+

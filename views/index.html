@@ -3,12 +3,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>爱代驾</title>
+    <title>科普时间-科普知识分享平台</title>
     <link rel="stylesheet" href="../assets/css/scaffold.css"/>
     <link rel="stylesheet" href="../assets/css/font-awesome.css"/>
     <link rel="stylesheet" href="../assets/css/modal.css"/>
+    <link rel="stylesheet" href="../assets/css/dropdowns.css"/>
     <script type="text/javascript" src="../assets/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../assets/js/application.js"></script>
     <script type="text/javascript" src="../assets/js/modal.js"></script>
+    <script type="text/javascript" src="../assets/js/dropdown.js"></script>
 </head>
 <body>
 
@@ -20,7 +23,7 @@
 <header class="navbar fixed fixed-show">
     <!-- start Logo -->
     <div class="logo-container">
-        <a href="#" class="logo">科普时间</a>
+        <a href="#" class="logo" title="科普时间"><i class="fa fa-coffee" aria-hidden="true"></i></a>
     </div>
 
     <!-- start title -->
@@ -34,26 +37,35 @@
     <!-- 右侧部分菜单 -->
     <div>
         <ul class="navbar-right-container">
-            <!--<li>
-                <a href="#">
-                    <img class="avatar" src="../assets/images/avatar_m.jpeg"/>
+            <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                   <!-- <img class="avatar" src="../assets/images/avatar_m.jpeg"/>
+                    <span class="caret"></span>-->
                 </a>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="#">个人主页</a></li>
+                    <li><a href="#">账号设置</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">退出系统</a></li>
+                </ul>
             </li>
 
-            <li>
+
+            <li class="nav-item">
                 <a href="#" class="bell">
                     <i class="fa fa-bell" aria-hidden="true"></i>
                 </a>
             </li>
 
-            <li>
+            <!--<li>
                 <a class="btn btn-green" href="#">
                     <i class="fa fa-plus" aria-hidden="true"></i>
                     写科普
                 </a>
             </li>-->
 
-            <li>
+            <li class="nav-item">
                 <a class="btn btn-grey" href="#" data-toggle="modal" data-target="#login-modal">
                     登录/注册
                 </a>
@@ -78,6 +90,190 @@
         <div class="tabs">
             <a class="tab active" href="#">今日科普</a>
             <a class="tab" href="#">一周精选</a>
+        </div>
+
+        <div class="items-container">
+            <ul class="items">
+                <li class="item item-with-title-img">
+                    <article>
+                        <a href="/p/21317116?refer=econpaper" class="entry-link">
+                            <h1 class="entry-title">夏天如何健康驱蚊</h1>
+                            <div class="title-img-container">
+                                <div class="title-img-preview" style="background-image: url(../assets/images/cover_b.jpg);"></div>
+                            </div>
+                            <section class="entry-summary">
+                                <p>大家好！SlowMover 的 Live 暂定于本月中下旬举办。由于我在知乎经济学类问题下的回答向来杂乱——既有理论的，也有经验…
+                                    <span class="read-all">查看全文<i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                </p>
+                            </section>
+                        </a>
+                        <footer>
+                            <div class="entry-meta">
+                                <a target="_blank" href="https://www.zhihu.com/people/slowmover" class="author name">Horance</a>
+                                <span class="bull" ng-click="test()">·</span>
+                                <time class="published hover-title">3 天前</time>
+                            </div>
+
+                            <div class="entry-func">
+                                <a href="/p/21317116" class="view-num">680<span> 次阅读</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116" class="vote-num">109<span> 赞</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116#comments" class="comment">39<span> 条评论</span></a>
+                            </div>
+                        </footer>
+                    </article>
+                </li>
+
+                <li class="item item-with-title-img">
+                    <article>
+                        <a href="/p/21317116?refer=econpaper" class="entry-link">
+                            <h1 class="entry-title">如何做好一个准爸爸/妈妈</h1>
+                            <div class="title-img-container">
+                                <div class="title-img-preview" style="background-image: url(../assets/images/cover_01_b.jpg);"></div>
+                            </div>
+                            <section class="entry-summary">
+                                <p>大家好！SlowMover 的 Live 暂定于本月中下旬举办。由于我在知乎经济学类问题下的回答向来杂乱——既有理论的，也有经验…
+                                    <span class="read-all">查看全文<i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                </p>
+                            </section>
+                        </a>
+                        <footer>
+                            <div class="entry-meta">
+                                <a target="_blank" href="https://www.zhihu.com/people/slowmover" class="author name">SlowMover</a>
+                                <span class="bull" ng-click="test()">·</span>
+                                <time class="published hover-title">3 天前</time>
+                            </div>
+
+                            <div class="entry-func">
+                                <a href="/p/21317116" class="vote-num">109<span> 赞</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116#comments" class="comment">39<span> 条评论</span></a>
+                            </div>
+                        </footer>
+                    </article>
+                </li>
+
+                <li class="item item-with-title-img">
+                    <article>
+                        <a href="/p/21317116?refer=econpaper" class="entry-link">
+                            <h1 class="entry-title">夏天如何健康驱蚊</h1>
+                            <div class="title-img-container">
+                                <div class="title-img-preview" style="background-image: url(../assets/images/cover_b.jpg);"></div>
+                            </div>
+                            <section class="entry-summary">
+                                <p>大家好！SlowMover 的 Live 暂定于本月中下旬举办。由于我在知乎经济学类问题下的回答向来杂乱——既有理论的，也有经验…
+                                    <span class="read-all">查看全文<i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                </p>
+                            </section>
+                        </a>
+                        <footer>
+                            <div class="entry-meta">
+                                <a target="_blank" href="https://www.zhihu.com/people/slowmover" class="author name">Horance</a>
+                                <span class="bull" ng-click="test()">·</span>
+                                <time class="published hover-title">3 天前</time>
+                            </div>
+
+                            <div class="entry-func">
+                                <a href="/p/21317116" class="view-num">680<span> 次阅读</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116" class="vote-num">109<span> 赞</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116#comments" class="comment">39<span> 条评论</span></a>
+                            </div>
+                        </footer>
+                    </article>
+                </li>
+
+                <li class="item item-with-title-img">
+                    <article>
+                        <a href="/p/21317116?refer=econpaper" class="entry-link">
+                            <h1 class="entry-title">如何做好一个准爸爸/妈妈</h1>
+                            <div class="title-img-container">
+                                <div class="title-img-preview" style="background-image: url(../assets/images/cover_b.jpg);"></div>
+                            </div>
+                            <section class="entry-summary">
+                                <p>大家好！SlowMover 的 Live 暂定于本月中下旬举办。由于我在知乎经济学类问题下的回答向来杂乱——既有理论的，也有经验…
+                                    <span class="read-all">查看全文<i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                </p>
+                            </section>
+                        </a>
+                        <footer>
+                            <div class="entry-meta">
+                                <a target="_blank" href="https://www.zhihu.com/people/slowmover" class="author name">SlowMover</a>
+                                <span class="bull" ng-click="test()">·</span>
+                                <time class="published hover-title">3 天前</time>
+                            </div>
+
+                            <div class="entry-func">
+                                <a href="/p/21317116" class="vote-num">109<span> 赞</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116#comments" class="comment">39<span> 条评论</span></a>
+                            </div>
+                        </footer>
+                    </article>
+                </li>
+
+                <li class="item item-with-title-img">
+                    <article>
+                        <a href="/p/21317116?refer=econpaper" class="entry-link">
+                            <h1 class="entry-title">夏天如何健康驱蚊</h1>
+                            <div class="title-img-container">
+                                <div class="title-img-preview" style="background-image: url(../assets/images/cover_b.jpg);"></div>
+                            </div>
+                            <section class="entry-summary">
+                                <p>大家好！SlowMover 的 Live 暂定于本月中下旬举办。由于我在知乎经济学类问题下的回答向来杂乱——既有理论的，也有经验…
+                                    <span class="read-all">查看全文<i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                </p>
+                            </section>
+                        </a>
+                        <footer>
+                            <div class="entry-meta">
+                                <a target="_blank" href="https://www.zhihu.com/people/slowmover" class="author name">Horance</a>
+                                <span class="bull" ng-click="test()">·</span>
+                                <time class="published hover-title">3 天前</time>
+                            </div>
+
+                            <div class="entry-func">
+                                <a href="/p/21317116" class="view-num">680<span> 次阅读</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116" class="vote-num">109<span> 赞</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116#comments" class="comment">39<span> 条评论</span></a>
+                            </div>
+                        </footer>
+                    </article>
+                </li>
+
+                <li class="item item-with-title-img">
+                    <article>
+                        <a href="/p/21317116?refer=econpaper" class="entry-link">
+                            <h1 class="entry-title">如何做好一个准爸爸/妈妈</h1>
+                            <div class="title-img-container">
+                                <div class="title-img-preview" style="background-image: url(../assets/images/cover_b.jpg);"></div>
+                            </div>
+                            <section class="entry-summary">
+                                <p>大家好！SlowMover 的 Live 暂定于本月中下旬举办。由于我在知乎经济学类问题下的回答向来杂乱——既有理论的，也有经验…
+                                    <span class="read-all">查看全文<i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+                                </p>
+                            </section>
+                        </a>
+                        <footer>
+                            <div class="entry-meta">
+                                <a target="_blank" href="https://www.zhihu.com/people/slowmover" class="author name">SlowMover</a>
+                                <span class="bull" ng-click="test()">·</span>
+                                <time class="published hover-title">3 天前</time>
+                            </div>
+
+                            <div class="entry-func">
+                                <a href="/p/21317116" class="vote-num">109<span> 赞</span></a>
+                                <span class="bull">·</span>
+                                <a href="/p/21317116#comments" class="comment">39<span> 条评论</span></a>
+                            </div>
+                        </footer>
+                    </article>
+                </li>
+            </ul>
         </div>
 
         <!--<nav class="nav-title">
